@@ -1,29 +1,128 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="ConsumoDeCombustível.css">
-</head>
+<html>
+    <head>
+        <title>CONSUMO MÉDIO</title>
+        <script type="text/javascript">
+            function consumomedio (){
+                var kminicial = parseFloat(document.getElementById("kminicial").value);
+                var kmatual = parseFloat(document.getElementById("kmatual").value);
+                var abastecido = parseFloat(document.getElementById("abastecido").value);
+
+                if (!isNaN(kminicial) && !isNaN(kmatual) && !isNaN(abastecido) && abastecido !== 0) {
+            var consumomedio = (kmatual - kminicial) / abastecido;
+
+            alert("O consumo médio é: " + consumomedio.toFixed(2)); 
+            } else {
+            alert("Por favor, insira valores numéricos válidos.");
+            }
+            }
+
+            function comparacao()  {
+                var gasolina = parseFloat(document.getElementById("gasolina").value);
+                var alcool = parseFloat(document.getElementById("alcool").value);
+
+                if (!isNaN(gasolina) && !isNaN(alcool) && gasolina > 0 && alcool > 0){
+                    var diferenca = ((gasolina-alcool)/gasolina) * 100;
+                    
+                    if (diferenca >= 70) {
+                    alert("A gasolina é mais viável.");
+                    }
+                    else{
+                        alert("O álcool é mais viável");
+                    } 
+                 }
+                }
+                  
+        </script>
+        
+    </head>
 <body>
-    <h1>Bem-vindo ao Programa de Cálculo de Consumo de Combustível e Comparação de Preços!</h1><br> 
 
-<div class="ConsumoMedio">
-    <h3>Por favor, insira os seguintes dados: </h3><br>
-
-    Quantidade de quilômetros percorridos: <input id="input1"><br>
-    Quantidade de litros de combustível gastos:  <input id="input2"><br>
-    <button id="button1"> <h4>clique aqui para calcular o sonsumo médio do seu carro!</h4> </button><br> <br> <br>
+    <h1>Bem-vindo ao Programa de Cálculo de Consumo de Combustível e Comparação de Preços!</h1><br>
+    <div class="Consumo">
+    <form id="consumomedio" name="consumo médio" action="#">
+        <span><h4>por favor, insira os seguintes dados:</h4></span><br>
+        <label for="kminicial"> Informe a quilometragem inicial: </label>
+        <input type="text" id="kminicial" name="kminicial"><br>
+        <br>
+        <label for="kmatual"> Informe a quilometragem atual: </label>
+        <input type="text" id="kmatual" name="kmatual"><br>
+        <br>
+        <label for="abastecido"> Informe a quantidade de litros abastecidos: </label>
+        <input type="text" id="abastecido" name="abastecido"><br> 
+    
+        <input type="submit" value="clique aqui para calcular o sonsumo médio do seu carro!" id="botao1" onclick="consumomedio()">
+    </form><br> <br>
 </div>
 
-<div class="precos">
-    <h3>vamos comparar os preços! </h3><br>
-    Preço do litro do álcool:  <input id="input3"><br>
-    Preço do litro da gasolina: <input id="input4"><br>
-    <button id="button2"> <h4>gasolina ou alcool?</h4> </button>
+    <div class="combustivel">
+
+    <form id="comparacao" name="comparacao" action="#">
+        <span><h4>vamos comparar os preços!</h4></span> <br>
+        <label for="gasolina"> Informe o preço da gasolina: </label>
+        <input type="text" id="gasolina" name="gasolina"><br>
+        <br>
+        <label for="alcool"> o valor do alcool: </label>
+        <input type="text" id="alcool" name="alcool"><br>
+    
+        <input type="submit" value="gasolina ou alcool?" id="botao2" onclick="comparacao()">
+    </form>
 </div>
 
 
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+}
+
+div.Consumo{
+    background-color: rgb(155, 117, 70);
+    margin: 30px;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+#botao1{
+    margin: 10px;
+    padding: 20px;
+    height: 5px;
+    border-radius: 10px;
+    text-align: center;  
+    cursor: pointer;
+}
+
+#botao1:hover{
+    background-color: rgb(233, 199, 156);}
+
+div.combustivel{
+    background-color: rgb(205, 154, 91);
+    margin: 30px;
+    padding: 40px;
+    border-radius: 10px;
+    
+}
+
+#botao2{
+    margin: 10px;
+    padding: 20px;
+    height: 5px;
+    border-radius: 10px;
+    text-align: center; 
+    cursor: pointer;
+}
+
+#botao2:hover{
+    background-color: rgb(229, 197, 161);}
+
+h1{
+    text-align: center;
+}
+
+body{
+    background-image: linear-gradient(45deg,rgb(236, 233, 231), rgb(149, 83, 42));
+    height: 100vh;
+}
+    </style>
 </body>
 </html>
