@@ -2,39 +2,6 @@
 <html>
     <head>
         <title>CONSUMO MÉDIO</title>
-        <script type="text/javascript">
-            function consumomedio (){
-                var kminicial = parseFloat(document.getElementById("kminicial").value);
-                var kmatual = parseFloat(document.getElementById("kmatual").value);
-                var abastecido = parseFloat(document.getElementById("abastecido").value);
-
-                if (!isNaN(kminicial) && !isNaN(kmatual) && !isNaN(abastecido) && abastecido !== 0) {
-            var consumomedio = (kmatual - kminicial) / abastecido;
-
-            alert("O consumo médio é: " + consumomedio.toFixed(2)); 
-            } else {
-            alert("Por favor, insira valores numéricos válidos.");
-            }
-            }
-
-            function comparacao()  {
-                var gasolina = parseFloat(document.getElementById("gasolina").value);
-                var alcool = parseFloat(document.getElementById("alcool").value);
-
-                if (!isNaN(gasolina) && !isNaN(alcool) && gasolina > 0 && alcool > 0){
-                    var diferenca = ((gasolina-alcool)/gasolina) * 100;
-                    
-                    if (diferenca >= 70) {
-                    alert("A gasolina é mais viável.");
-                    }
-                    else{
-                        alert("O álcool é mais viável");
-                    } 
-                 }
-                }
-                  
-        </script>
-        
     </head>
 <body>
 
