@@ -1,4 +1,5 @@
-let temperatura = 25
+let temperatura = 14
+
 
 if  (temperatura >= 25){
     console.log("está quente");
