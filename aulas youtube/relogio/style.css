@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+
+}
+
+body{
+    background-color: rgb(119, 137, 239);
+}
+
+main{
+    min-width: 100vh;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clock{
+    width: 600px;
+    height: 600px;
+    background-color: beige;
+    border-radius: 300px;
+    border:15px groove #090909 ;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.number{
+    font-size: 1.2rem;
+    font-weight: 600;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 5px;
+    transform: rotate(30deg);
+}
+
+.number-1{
+    transform: rotate(30deg);
+}
+
+.number-2{
+    transform: rotate(60deg);
+}
+
+.number-3{
+    transform: rotate(90deg);
+}
+
+.number-4{
+    transform: rotate(120deg);
+}
+
+.number-5{
+    transform: rotate(150deg);
+}
+
+.number-6{
+    transform: rotate(180deg);
+}
+
+.number-7{
+    transform: rotate(210deg);
+
+}
+
+.number-8{
+    transform: rotate(240deg);
+}
+
+.number-9{
+    transform: rotate(270deg);
+}
+
+.number-10{
+    transform: rotate(300deg);
+}
+
+.number-11{
+    transform: rotate(330deg);
+}
+
+.number-12{
+    transform: rotate(360deg);
+}
+
+.ponteiro-Segundos{
+    width: 5px;
+    height: 240px;
+    background-color: rgb(245, 34, 11);
+    position: absolute;
+    border-radius: 5px;
+    transform: translate(0, -50%);
+    transform-origin: bottom center;
+    
+}
+
+.ponteiro-Minutos{
+    width: 8px;
+    height: 200px;
+    background-color: rgb(31, 24, 37);
+    position: absolute;
+    border-radius: 5px;
+    transform: translate(0, -50%) ;
+    transform-origin: bottom center;
+    
+}
+
+.ponteiro-Horas{
+    width: 13px;
+    height: 150px;
+    background-color: rgb(40, 38, 41);
+    position: absolute;
+    border-radius: 13px;
+    transform: translate(0, -50%);
+    transform-origin: bottom center;
+    
+}
+
+.center{
+    width: 30px;
+    height:30px ;
+    border-radius: 50px;
+    background-color: blue;
+    position: absolute;
+}
+  
+  
