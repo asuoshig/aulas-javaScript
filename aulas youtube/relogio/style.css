@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family:'Times New Roman', Times, serif;
-
 }
 
 body{
@@ -21,13 +20,14 @@ main{
 .clock{
     width: 600px;
     height: 600px;
-    background-color: beige;
+    background-image: linear-gradient(#b0adb4, #ede9f1);
     border-radius: 300px;
     border:15px groove #090909 ;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 2px 2px 30px #333 ;
 }
 
 .number{
@@ -39,6 +39,7 @@ main{
     text-align: center;
     padding: 5px;
     transform: rotate(30deg);
+    font-size: xx-large;
 }
 
 .number-1{
@@ -98,7 +99,9 @@ main{
     border-radius: 5px;
     transform: translate(0, -50%);
     transform-origin: bottom center;
-    
+    transition: transform 1s;
+   -webkit-transition: transform 1s;
+   box-shadow: 1px 1px 15px #333 ;
 }
 
 .ponteiro-Minutos{
@@ -109,7 +112,7 @@ main{
     border-radius: 5px;
     transform: translate(0, -50%) ;
     transform-origin: bottom center;
-    
+    box-shadow: 1px 1px 15px #333 ;
 }
 
 .ponteiro-Horas{
@@ -120,7 +123,7 @@ main{
     border-radius: 13px;
     transform: translate(0, -50%);
     transform-origin: bottom center;
-    
+    box-shadow: 1px 1px 15px #333 ;
 }
 
 .center{
@@ -129,6 +132,5 @@ main{
     border-radius: 50px;
     background-color: blue;
     position: absolute;
+    box-shadow: 1px 1px 15px #333 ;
 }
-  
-  
