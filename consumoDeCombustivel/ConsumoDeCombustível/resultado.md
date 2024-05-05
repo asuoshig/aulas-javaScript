@@ -1,2 +1,1 @@
-<img>
-![image](https://github.com/asuoshig/aulas-javaScript/assets/144859297/f077fdc5-3920-4023-8ac6-a3fa728b8044)</img>
+<img>![image](https://github.com/asuoshig/aulas-javaScript/assets/144859297/805a7cd4-a4cd-4b64-a372-fa55d34fc59c)</img>
