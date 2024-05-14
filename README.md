@@ -1,6 +1,6 @@
 # aulas-javaScript 
 
-Este repositório trata-se de contribuições para o meu aprendizado em javaScript, HTML e css.
+Este repositório trata-se de contribuições para o meu aprendizado em javaScript, alguns com estilização usando HTML e CSS.
 As aulas usadas de base foram: <br>
 -as aulas ministradas pelo professor Luan dentro do curso de web desenvolvimento e mobile. <br>
 -aulas de javaScript encontradas no you tube gratuitamente com ótimas didáticas. <br>
