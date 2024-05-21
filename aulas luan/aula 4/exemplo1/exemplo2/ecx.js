@@ -8,7 +8,7 @@
 // });
 
 // server.listen(port, () => {
-//     console.log(`servidor rodando em http://localhost:${port}/`);
+//     console.log(servidor rodando em http://localhost:${port}/);
 // })
 
 const http = require('http');
@@ -37,9 +37,9 @@ const requestListener = function(req, res){
     console.log("chegou uma requisiçao no backend")
     console.log("chegou uma requisição")
 
-    if (barrateste == url){
-        console.log("você é uma url")
-    }
+    // if (barrateste == url){
+    //     console.log("você é uma url")
+    // }
 
     
     
@@ -48,7 +48,7 @@ const requestListener = function(req, res){
 }
 
 const server = http.createServer();
-server.on('request', requestListener) // uplicando, o dodigo quebra.
+server.on('request', requestListener) // duplicando, o dodigo quebra.
 
 server.listen(port, host, () => {
     console.log(`servidor rodando em http://${host}:${port}/`)
