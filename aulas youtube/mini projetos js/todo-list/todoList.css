@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.container{
+    background-color: antiquewhite;
+    width: 500px;
+    border-radius: 10px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+
+.input-tarefas{
+    border: none;
+    border-radius: 10px;
+    width: 300px;
+    height: 40px;
+}
+
+.button-AdicionaTarefas{
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    background-color: #0033;
+    color: #fff;
+    font-size: 17px;
+    padding: 0 15px; /* 0 em cima e baixo e 15 nas laterais */
+    float: right; /* jogar o botao para a direita */
+    cursor: pointer; /* coloca a maozinha no lugar da seta */
+
+}
+
+.button-AdicionaTarefas:hover{ /* hover é um evento*/
+    opacity: 0.8;
+}
+
+.button-AdicionaTarefas:active{ /* quando o botao estiver em atividade */
+    opacity: 0.6;
+}
+
+img{
+    height: 25px;
+}
+
+body{
+    background: url("./img/fundo.jpg");
+}
