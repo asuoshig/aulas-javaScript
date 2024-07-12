@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div#area{
+            background: rgb(42, 139, 47);
+            color: aliceblue;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+     <div id="area" > <!--sempre que chamarmos uma function no js devemos chamar ela aqui, porem se usarmos o eventlistener nao precisa ja que ele serve para deixar o html mais limpo.-->
+        interaja...
+    </div>
+
+    <script>
+        var a = document.getElementById('area')
+        a.addEventListener('click', clicar)   //addeventelistener serve para que o codigo html fique mais limpo e organizado.
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+        
+        function clicar(){
+            a.innerText = 'clicou!'
+            a.style.background = 'red' //quando clicar o fundo fica vermelho
+        }
+
+        function entrar(){
+            a.innerText = 'entrou'
+        }
+
+        function sair() {
+            a.innerText = 'saiu'
+            a.style.background = 'green' //o fundo volta a ser verde quando o mouse sai.
+        }
+    </script>
+    
+</body>
+</html>
