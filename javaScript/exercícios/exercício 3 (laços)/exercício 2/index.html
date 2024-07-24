@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body >
+    <header>
+        <h1>contador</h1>
+    </header>
+    <section>
+        <div>
+            <p>início da contagem:
+                <input type="number" name="txtinicio" id="inicioc" min="0">
+            </p>
+            <p>fim da contagem:
+                <input type="number" name="txtfim" id="fimc" min="0">
+            </p>
+            <p>passo da contagem:
+                <input type="number" name="txtpasso" id="passoc" min="0">
+            </p>
+            
+            <p>
+                <input type="button" value="contar" onclick="contar()">
+            </p>
+        </div>
+        <div id="resultado">
+           Por favor, não deixe a caixa vazia!
+        </div>
+    </section>
+    <footer>
+        &copy; CursoemVideo
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
