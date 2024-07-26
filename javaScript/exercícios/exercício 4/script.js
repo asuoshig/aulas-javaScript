@@ -14,4 +14,6 @@ function calcular(){
             c++ //incremento
         }
     }
+
+
 }
